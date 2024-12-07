@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <title>Folha de ponto</title>
+</head>
+<body>
+    <nav>
+        <h1>Folha de ponto</h1>
+    </nav>
+    <section>
+        <form action="" method="POST" >
+            <legend>Registro de ponto</legend>
+            <div class="groupExpediente">
+                <select name="nome">
+                    <option value="Selecione">Selecione</option>
+                    <option data-id="01">RAYANE BORBA</option>
+                    <option data-id="02">JHOM PABLO R. SANTOS</option>
+                    <option data-id="03">VITORIA</option>
+                </select><br>
+                <div id="groupDate">
+                    <input type="datetime" name="data" readonly>
+                    <i class='bx bxs-calendar'></i>
+                </div>
+                <div class="btnGroup">
+                    <i id="submit-entrada" name="botao" class='bx bx-door-open' value="entrada" title="Entrada"></i>
+                    <!-- <button id="submit-entrada" name="botao" value="entrada">Entrada</button> -->
+                    <i id="submit-intervalo" name="botao" class='bx bx-stopwatch' value="intervalo" title="Intervalo"></i>
+                    <!-- <button id="submit-intervalo" name="botao" value="intervalo">Intervalo</button> -->
+                    <i id="submit-retorno" name="botao" class='bx bxs-stopwatch' value="retorno" title="Retorno"></i>
+                    <!-- <button id="submit-retorno" name="botao" value="retorno">Retorno</button> -->
+                    <i id="submit-saida" name="botao" class='bx bxs-door-open' value="saida" title="Saída"></i>
+                    <!-- <button id="submit-saida" name="botao" value="saida">Saída</button> -->
+                </div>
+            </div>
+            <div class="dataLocal">
+                <input type="time" id="relogio" name="time">
+            </div>
+        </form>
+    </section>
+    <section>
+        <div class="modal">
+            <div class="window">
+                <div class="content"></div>
+                <button type="button">OK</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
